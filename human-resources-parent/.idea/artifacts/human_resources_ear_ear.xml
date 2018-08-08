@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="human-resources-ear:ear">
+    <output-path>$PROJECT_DIR$/../human-resources-ear/target</output-path>
+    <root id="archive" name="human-resources-ear-1.0-SNAPSHOT.ear">
+      <element id="artifact" artifact-name="human-resources-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

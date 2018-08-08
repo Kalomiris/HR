@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>human-resources-parent</artifactId>
+        <groupId>com.afse.final</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../human-resources-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>human-resources-ear</artifactId>
+    <packaging>ear</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-ear-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                    <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <skinnyWars>true</skinnyWars>
+                    <modules>
+                        <webModule>
+                            <groupId>com.afse.final</groupId>
+                            <artifactId>human-resources-rest</artifactId>
+                            <contextRoot>/resource</contextRoot>
+                        </webModule>
+                        <ejbModule>
+                            <groupId>com.afse.final</groupId>
+                            <artifactId>human-resources-service</artifactId>
+                            <bundleFileName>human-resources-service-1.0-SNAPSHOT.jar</bundleFileName>
+                        </ejbModule>
+                        <ejbModule>
+                            <groupId>com.afse.final</groupId>
+                            <artifactId>human-resources-persistence-dao</artifactId>
+                            <bundleFileName>human-resources-persistence-dao-1.0-SNAPSHOT.jar</bundleFileName>
+                        </ejbModule>
+                        <jarModule>
+                            <groupId>com.afse.final</groupId>
+                            <artifactId>human-resources-persistence-entity</artifactId>
+                            <bundleFileName>human-resources-persistence-entity-1.0-SNAPSHOT.jar</bundleFileName>
+                        </jarModule>
+                    </modules>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.0.1.Final</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.afse.final</groupId>
+            <artifactId>human-resources-rest</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>war</type>
+        </dependency>
+        <dependency>
+            <groupId>com.afse.final</groupId>
+            <artifactId>human-resources-service</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.afse.final</groupId>
+            <artifactId>human-resources-persistence-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>ejb</type>
+        </dependency>
+        <dependency>
+            <groupId>com.afse.final</groupId>
+            <artifactId>human-resources-persistence-entity</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+
+
+
+</project>

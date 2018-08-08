@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="human-resources-common" />
+        <module name="human-resources-ear" />
+        <module name="human-resources-persistence-dao" />
+        <module name="human-resources-persistence-entity" />
+        <module name="human-resources-rest" />
+        <module name="human-resources-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="human-resources-common" target="1.8" />
+      <module name="human-resources-ear" target="1.8" />
+      <module name="human-resources-etc" target="1.8" />
+      <module name="human-resources-parent" target="1.8" />
+      <module name="human-resources-persistence-dao" target="1.8" />
+      <module name="human-resources-persistence-entity" target="1.8" />
+      <module name="human-resources-rest" target="1.8" />
+      <module name="human-resources-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

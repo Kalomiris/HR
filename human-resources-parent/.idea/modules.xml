@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-common/human-resources-common.iml" filepath="$PROJECT_DIR$/../human-resources-common/human-resources-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-ear/human-resources-ear.iml" filepath="$PROJECT_DIR$/../human-resources-ear/human-resources-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-etc/human-resources-etc.iml" filepath="$PROJECT_DIR$/../human-resources-etc/human-resources-etc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/human-resources-parent.iml" filepath="$PROJECT_DIR$/human-resources-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-persistence-dao/human-resources-persistence-dao.iml" filepath="$PROJECT_DIR$/../human-resources-persistence-dao/human-resources-persistence-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-persistence-entity/human-resources-persistence-entity.iml" filepath="$PROJECT_DIR$/../human-resources-persistence-entity/human-resources-persistence-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-rest/human-resources-rest.iml" filepath="$PROJECT_DIR$/../human-resources-rest/human-resources-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../human-resources-service/human-resources-service.iml" filepath="$PROJECT_DIR$/../human-resources-service/human-resources-service.iml" />
+    </modules>
+  </component>
+</project>

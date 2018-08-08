@@ -1,0 +1,19 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="createSequence" author="John_Kalomiris" failOnError="true" runAlways="false">
+
+        <createSequence sequenceName="EMPLOYEESEQ" startValue="1" incrementBy="1"/>
+
+        <createSequence sequenceName="DEPARTMENTSEQ" startValue="1" incrementBy="1"/>
+
+        <createSequence sequenceName="LOCATIONSEQ" startValue="1" incrementBy="1"/>
+
+        <createSequence sequenceName="EMAILSEQ" startValue="1" incrementBy="1"/>
+
+    </changeSet>
+
+</databaseChangeLog>

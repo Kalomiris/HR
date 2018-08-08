@@ -1,0 +1,44 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="insert_City_Country" author="John_Kalomiris" failOnError="true" runAlways="false">
+
+        <insert tableName="employee">
+            <column name="id" valueSequenceNext="EMPLOYEESEQ"/>
+            <column name="first_name" value="John"/>
+            <column name="last_name" value="Kalomiris"/>
+            <column name="birth_date" value="1999-08-31"/>
+            <column name="country" value="Greece"/>
+            <column name="city" value="Athens"/>
+            <column name="street" value="Feraiou"/>
+            <column name="streetn" value="32"/>
+            <column name="zip" value="12732"/>
+            <column name="phone_number" value="6935548899"/>
+            <column name="email" value="kalom_giannhs@yahoo.gr"/>
+            <column name="salary" value="10025.33"/>
+            <column name="join_date" value="1999-08-31"/>
+            <column name="department_id" value= "2"/>
+        </insert>
+        <insert tableName="employee">
+            <column name="id" valueSequenceNext="EMPLOYEESEQ"/>
+            <column name="first_name" value="Nelson"/>
+            <column name="last_name" value="Sadovar"/>
+            <column name="birth_date" value="1999-08-31"/>
+            <column name="country" value="France"/>
+            <column name="city" value="Paris"/>
+            <column name="street" value="Buvuar"/>
+            <column name="streetn" value="22"/>
+            <column name="zip" value="123732"/>
+            <column name="phone_number" value="6935548864"/>
+            <column name="email" value="nelson@yahoo.gr"/>
+            <column name="salary" value="10095.33"/>
+            <column name="join_date" value="1999-08-31"/>
+            <column name="department_id" value= "1"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

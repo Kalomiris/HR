@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/daoJPA/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/daoJPA/src/main/java/dao/LocationDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/daoJPA/src/main/java/dao/LocationDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/daoJPA/src/main/resources/META-INF/persistence.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/persistenceEntities/src/main/java/entity/Location.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/resourceCRUD/src/main/java/boundary/BoundaryLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/resourceCRUD/src/main/java/boundary/BoundaryLocationImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/resourceCRUD/src/main/java/rest/resource/ResourceLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/resourceCRUD/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/service/src/main/java/service/LocationService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/service/src/main/java/service/LocationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Advantage_FSE/service/src/main/java/validation/ValidatorService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-common/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-common/src/main/java/exception/InvalidInputException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-common/src/main/java/exception/exception.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-ear/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/db.changelog.master.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/ddl/db.changelog-create.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/ddl/db.changelog-createSequence.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-F_K.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-addConstrainToLocation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-insert-department.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-insert-employee.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-insert-location.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-insert.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/DepartmentDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/DepartmentDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/EmailDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/EmailDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/EmployeeDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/EmployeeDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/LocationDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/java/com/afse/persistence/dao/LocationDaoImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-dao/src/main/resources/MET-INF/persistence.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/com/afse/persistence/entity/Address.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/com/afse/persistence/entity/Department.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/com/afse/persistence/entity/EmailMassage.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/com/afse/persistence/entity/Employee.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/com/afse/persistence/entity/Location.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryDepartment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryDepartmentImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryEmployee.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryEmployeeImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/boundary/BoundaryLocationImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/mapper/ApplicationHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/rest/AppConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/rest/resource/ResourceDepartment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/rest/resource/ResourceEmployee.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/rest/resource/ResourceLocation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/AllowFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/EmployeeFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/webapp/WEB-INF/web.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/queue/AbstractQueueService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/queue/MailQueueMessageDrivenBean.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/queue/MailQueueService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/queue/MailQueueServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/DepartmentService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/DepartmentServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/EmailService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/EmailServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/EmployeeService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/EmployeeServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/LocationService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/service/LocationServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/validation/LocationValidator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/validation/LocationValidatorImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/validation/ValidatorService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/validation/ValidatorServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

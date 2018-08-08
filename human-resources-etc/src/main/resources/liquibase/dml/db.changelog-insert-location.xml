@@ -1,0 +1,42 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+<changeSet id="insert_City_Country" author="John_Kalomiris" failOnError="true" runAlways="false">
+
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="Greece"/>
+        <column name="city" value="Athens"/>
+    </insert>
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="Italy"/>
+        <column name="city" value="Rome"/>
+    </insert>
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="Germany"/>
+        <column name="city" value="Berlin"/>
+    </insert>
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="France"/>
+        <column name="city" value="Paris"/>
+    </insert>
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="Spain"/>
+        <column name="city" value="Madrid"/>
+    </insert>
+    <insert tableName="location">
+        <column name="id" valueSequenceNext="LOCATIONSEQ"/>
+        <column name="country" value="Greece"/>
+        <column name="city" value="Patra"/>
+    </insert>
+
+</changeSet>
+
+</databaseChangeLog>

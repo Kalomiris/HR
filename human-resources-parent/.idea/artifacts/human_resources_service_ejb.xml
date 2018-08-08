@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="human-resources-service:ejb">
+    <output-path>$PROJECT_DIR$/../human-resources-service/target</output-path>
+    <root id="archive" name="human-resources-service-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="human-resources-service:ejb exploded" />
+    </root>
+  </artifact>
+</component>

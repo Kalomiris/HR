@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="human-resources-persistence-dao:ejb">
+    <output-path>$PROJECT_DIR$/../human-resources-persistence-dao/target</output-path>
+    <root id="archive" name="human-resources-persistence-dao-1.0-SNAPSHOT.jar">
+      <element id="artifact" artifact-name="human-resources-persistence-dao:ejb exploded" />
+    </root>
+  </artifact>
+</component>

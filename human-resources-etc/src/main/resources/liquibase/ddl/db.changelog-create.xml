@@ -1,0 +1,117 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="dep" author="John_Kalomiris" failOnError="true" runAlways="false">
+        <createTable tableName="department">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="street" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="streetn" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zip" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="empl" author="John_Kalomiris" failOnError="true" runAlways="false">
+        <createTable tableName="employee">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="birth_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="street" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="streetn" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zip" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="salary" type="float">
+                <constraints nullable="false"/>
+            </column>
+            <column name="join_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="department_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet id="country-city" author="John_Kalomiris" runAlways="false" runOnChange="true">
+        <createTable tableName="location">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addUniqueConstraint columnNames="country, city"
+                             constraintName="const_city_country"
+                             deferrable="true"
+                             disabled="true"
+                             initiallyDeferred="true"
+                             schemaName="public"
+                             tableName="location"/>
+
+    </changeSet>
+
+    <changeSet id="emailMassage" author="John_Kalomiris" failOnError="true" runAlways="false">
+        <createTable tableName="mailbox">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="message" type="varchar(200)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+
+
+</databaseChangeLog>

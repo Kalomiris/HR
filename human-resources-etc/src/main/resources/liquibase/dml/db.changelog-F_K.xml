@@ -1,0 +1,12 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="addF_K" author="John Kalomiris" failOnError="true" runAlways="false">
+        <addForeignKeyConstraint baseTableName="employee" baseColumnNames="id"
+                                 constraintName="fk_employee_department"
+                                 referencedTableName="department"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+</databaseChangeLog>
