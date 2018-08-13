@@ -103,12 +103,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/ddl.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/ddl/db.changelog-create.xml">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/ddl/db.changelog-createSequence.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml.xml">
           <value>
             <set />
           </value>
@@ -139,6 +149,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../human-resources-etc/src/main/resources/liquibase/dml/db.changelog-insert.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/dataSources/3b7f73b3-61e4-4c0d-8d08-bd2d5076edac/storage_v2/_src_/database/humanResourcesDS.B4ryOg/schema/public.abK9xQ.meta">
           <value>
             <set />
           </value>
@@ -384,6 +399,41 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../human-resources-service/src/main/java/com/afse/service/validation/ValidatorServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/Exception/InvalidInputException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/Service/CustomerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/Service/EditService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/controller/CustomerController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/controller/EditController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/dataBase/DataBaseSimulation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/validation/Validator.java">
           <value>
             <set />
           </value>
