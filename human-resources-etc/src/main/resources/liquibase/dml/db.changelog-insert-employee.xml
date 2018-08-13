@@ -14,7 +14,7 @@
             <column name="country" value="Greece"/>
             <column name="city" value="Athens"/>
             <column name="street" value="Feraiou"/>
-            <column name="streetn" value="32"/>
+            <column name="street_number" value="32"/>
             <column name="zip" value="12732"/>
             <column name="phone_number" value="6935548899"/>
             <column name="email" value="kalom_giannhs@yahoo.gr"/>
@@ -30,7 +30,7 @@
             <column name="country" value="France"/>
             <column name="city" value="Paris"/>
             <column name="street" value="Buvuar"/>
-            <column name="streetn" value="22"/>
+            <column name="street_number" value="22"/>
             <column name="zip" value="123732"/>
             <column name="phone_number" value="6935548864"/>
             <column name="email" value="nelson@yahoo.gr"/>

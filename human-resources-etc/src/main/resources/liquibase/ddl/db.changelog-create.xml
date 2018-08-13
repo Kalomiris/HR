@@ -21,7 +21,7 @@
             <column name="street" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="streetn" type="varchar(50)">
+            <column name="street_number" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
             <column name="zip" type="varchar(50)">
@@ -53,7 +53,7 @@
             <column name="street" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
-            <column name="streetn" type="varchar(50)">
+            <column name="street_number" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
             <column name="zip" type="varchar(50)">

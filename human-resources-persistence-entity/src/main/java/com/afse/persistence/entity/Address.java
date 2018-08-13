@@ -3,6 +3,7 @@ package com.afse.persistence.entity;
 
 import javax.persistence.Access;
 import javax.persistence.AccessType;
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -15,30 +16,35 @@ public class Address implements Serializable {
 
     private static final long serialVersionUID = -6299108918042614223L;
 
-    @NotNull(message = "NotNull attribute")
+    @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[a-zA-Z]+")
+    @Column(name = "country")
     private String country;
 
-    @NotNull(message = "NotNull attribute")
+    @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[a-zA-Z]+")
+    @Column(name = "city")
     private String city;
 
 
-    @NotNull(message = "NotNull attribute")
+    @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[a-zA-Z]+")
+    @Column(name = "street")
     private String street;
 
-    @NotNull(message = "NotNull attribute")
+    @NotNull(message = "Is empty!")
     @Size(max = 10, message = "size out of max")
     @Pattern(regexp = "[0-9]+")
-    private String streetn;
+    @Column(name = "street_number")
+    private String streetNumber;
 
-    @NotNull(message = "NotNull attribute")
+    @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[0-9]+")
+    @Column(name = "zip")
     private String zip;
 
     public String getCity() {
@@ -65,12 +71,12 @@ public class Address implements Serializable {
         this.street = street;
     }
 
-    public String getStreetn() {
-        return streetn;
+    public String getStreetNumber() {
+        return streetNumber;
     }
 
-    public void setStreetn(String streetn) {
-        this.streetn = streetn;
+    public void setStreetNumber(String street_number) {
+        this.streetNumber = street_number;
     }
 
     public String getZip() {
@@ -91,7 +97,7 @@ public class Address implements Serializable {
         if (!city.equals(address.city)) return false;
         if (!country.equals(address.country)) return false;
         if (!street.equals(address.street)) return false;
-        if (!streetn.equals(address.streetn)) return false;
+        if (!streetNumber.equals(address.streetNumber)) return false;
         return zip.equals(address.zip);
     }
 
@@ -101,7 +107,7 @@ public class Address implements Serializable {
                 "city='" + city + '\'' +
                 ", country='" + country + '\'' +
                 ", street='" + street + '\'' +
-                ", StreetNumber='" + streetn + '\'' +
+                ", StreetNumber='" + streetNumber + '\'' +
                 ", zipCode='" + zip + '\'' +
                 '}';
     }

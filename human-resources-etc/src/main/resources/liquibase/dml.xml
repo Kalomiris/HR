@@ -2,8 +2,10 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.3.xsd">
 
-    <include file="liquibase/ddl.xml" relativeToChangelogFile="true"/>
+    <include file="dml/db.changelog-insert-department.xml" relativeToChangelogFile="true"/>
 
-    <include file="liquibase/dml.xml" relativeToChangelogFile="true"/>
+    <include file="dml/db.changelog-insert-employee.xml" relativeToChangelogFile="true"/>
+
+    <include file="dml/db.changelog-insert-location.xml" relativeToChangelogFile="true"/>
 
 </databaseChangeLog>

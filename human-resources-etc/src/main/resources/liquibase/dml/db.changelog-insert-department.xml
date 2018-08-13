@@ -12,7 +12,7 @@
             <column name="country" value="Greece"/>
             <column name="city" value="Athens"/>
             <column name="street" value="Aleksandrou"/>
-            <column name="streetn" value="23"/>
+            <column name="street_number" value="23"/>
             <column name="zip" value="12282"/>
         </insert>
         <insert tableName="department">
@@ -21,7 +21,7 @@
             <column name="country" value="Italy"/>
             <column name="city" value="Rome"/>
             <column name="street" value="Poutsini"/>
-            <column name="streetn" value="90"/>
+            <column name="street_number" value="90"/>
             <column name="zip" value="22998"/>
         </insert>
         <insert tableName="department">
@@ -30,7 +30,7 @@
             <column name="country" value="Germany"/>
             <column name="city" value="Berlin"/>
             <column name="street" value="Straus"/>
-            <column name="streetn" value="88"/>
+            <column name="street_number" value="88"/>
             <column name="zip" value="122282"/>
         </insert>
         <insert tableName="department">
@@ -39,7 +39,7 @@
             <column name="country" value="Germany"/>
             <column name="city" value="Berlin"/>
             <column name="street" value="Frau"/>
-            <column name="streetn" value="445"/>
+            <column name="street_number" value="445"/>
             <column name="zip" value="22231"/>
         </insert>
         <insert tableName="department">
@@ -48,7 +48,7 @@
             <column name="country" value="France"/>
             <column name="city" value="Paris"/>
             <column name="street" value="Napoleon"/>
-            <column name="streetn" value="43"/>
+            <column name="street_number" value="43"/>
             <column name="zip" value="122082"/>
         </insert>
 

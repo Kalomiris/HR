@@ -15,7 +15,7 @@ public class EmailMassage implements Serializable {
     @SequenceGenerator(name = "EMAILSEQ", sequenceName = "EMAILSEQ", allocationSize = 1)
     private Long id;
 
-    @NotNull
+    @NotNull(message = "Is empty!")
     private String message;
 
     public Long getId() {

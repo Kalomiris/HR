@@ -1,7 +1,7 @@
 package com.afse.persistence.entity;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
@@ -17,13 +17,13 @@ public class Location implements Serializable {
     @SequenceGenerator(name = "LOCATIONSEQ", sequenceName = "LOCATIONSEQ", allocationSize = 1)
     private Long id;
 
-    @NotBlank
-    @Size(min = 3, max = 20)
+    @NotNull(message = "Is empty!")
+    @Size(max = 20, message = "size out of max")
     @Column(name = "country")
     private String country;
 
-    @NotBlank
-    @Size(min = 3, max = 20)
+    @NotNull(message = "Is empty!")
+    @Size(max = 20, message = "size out of max")
     @Column(name = "city")
     private String city;
 
