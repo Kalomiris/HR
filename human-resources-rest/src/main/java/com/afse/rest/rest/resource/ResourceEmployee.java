@@ -38,7 +38,7 @@ public class ResourceEmployee implements Serializable {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response saveEmployee(Employee employee) throws Exception {
 
-        LOGGER.debug("Post employee was called (url : /resource/department/save");
+        LOGGER.debug("Post employee was called (url : /resource/employee/save");
 
         Employee newEmployee = boundaryEmployee.save(employee);
 
@@ -52,7 +52,7 @@ public class ResourceEmployee implements Serializable {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response updateEmployee(Employee employee) throws Exception {
 
-        LOGGER.debug("Put employee was called (url : /resource/department/");
+        LOGGER.debug("Put employee was called (url : /resource/employee/");
 
         Employee newEmployee = boundaryEmployee.update(employee);
 
@@ -93,7 +93,7 @@ public class ResourceEmployee implements Serializable {
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteEmployee(@PathParam("id") Long id) throws InvalidInputException {
 
-        LOGGER.debug("Delete employee was called (url : /resource/department/" + id);
+        LOGGER.debug("Delete employee was called (url : /resource/employee/" + id);
 
         boundaryEmployee.delete(id);
 
