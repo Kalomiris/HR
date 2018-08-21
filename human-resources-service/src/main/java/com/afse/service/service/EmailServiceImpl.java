@@ -17,7 +17,6 @@ import javax.ejb.TransactionAttributeType;
 @Stateless
 public class EmailServiceImpl implements EmailService {
 
-    private static final long serialVersionUID = 4605712489785193839L;
     private static final Logger LOGGER = LoggerFactory.getLogger(EmailServiceImpl.class);
 
     @EJB

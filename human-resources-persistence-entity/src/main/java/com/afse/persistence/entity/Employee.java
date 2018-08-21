@@ -33,12 +33,13 @@ public class Employee implements Serializable {
     @Column(name = "birth_date")
     private Date birthDate;
 
+
     @Valid
     @Embedded
     private Address address;
 
     @NotNull(message = "Is empty!")
-    @Pattern(regexp = "[0-9]+")
+    @Pattern(regexp = "^[0-9]+")
     @Column(name = "phone_number")
     private String phoneNumber;
 
@@ -61,10 +62,16 @@ public class Employee implements Serializable {
     @ManyToOne
     @JoinColumn(name = "department_id")
     private Department department;
-
     public Long getId() {
         return id;
     }
+
+    /**
+     * Version for optimistic locking
+     */
+    @Version
+    @Column(name = "dbversion", nullable = false, columnDefinition = "INTEGER DEFAULT 0")
+    private int version;
 
     public void setId(Long id) {
         this.id = id;

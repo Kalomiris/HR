@@ -18,32 +18,32 @@ public class Address implements Serializable {
 
     @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
-    @Pattern(regexp = "[a-zA-Z]+")
+    @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "country")
     private String country;
 
     @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
-    @Pattern(regexp = "[a-zA-Z]+")
+    @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "city")
     private String city;
 
 
     @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
-    @Pattern(regexp = "[a-zA-Z]+")
+    @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "street")
     private String street;
 
     @NotNull(message = "Is empty!")
     @Size(max = 10, message = "size out of max")
-    @Pattern(regexp = "[0-9]+")
+    @Pattern(regexp = "^[0-9]+", message = "Please enter only numeric")
     @Column(name = "street_number")
     private String streetNumber;
 
     @NotNull(message = "Is empty!")
     @Size(max = 20, message = "size out of max")
-    @Pattern(regexp = "[0-9]+")
+    @Pattern(regexp = "^[0-9]+")
     @Column(name = "zip")
     private String zip;
 

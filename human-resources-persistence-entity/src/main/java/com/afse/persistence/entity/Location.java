@@ -27,7 +27,6 @@ public class Location implements Serializable {
     @Column(name = "city")
     private String city;
 
-
     public Long getId() {
         return id;
     }

@@ -9,7 +9,7 @@ import javax.ws.rs.ext.ExceptionMapper;
 import javax.ws.rs.ext.Provider;
 
 @Provider
-public class ApplicationHandler implements ExceptionMapper<Exception> {
+public class ExceptionHandler implements ExceptionMapper<Exception> {
 
     @Override
     public Response toResponse(Exception e) {
@@ -24,7 +24,11 @@ public class ApplicationHandler implements ExceptionMapper<Exception> {
             return Response.status(Response.Status.BAD_REQUEST).entity(e.getMessage()).build();
         }
 
-        return Response.status(Response.Status.NOT_FOUND).entity(e.getMessage()).build();
+        if(e instanceof NullPointerException){
+            return Response.status(Response.Status.NOT_FOUND).entity(e.getMessage()).build();
+        }
+
+        return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(e.getMessage()).build();
     }
 
 }

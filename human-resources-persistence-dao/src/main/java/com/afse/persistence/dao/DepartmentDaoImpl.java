@@ -6,6 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.ws.rs.NotFoundException;
 import java.util.List;
 
 @Stateless
@@ -29,18 +30,30 @@ public class DepartmentDaoImpl implements DepartmentDao {
     @Override
     public Department save(Department department) {
         entityManager.persist(department);
+        entityManager.flush();
         return department;
     }
 
     @Override
     public Department find(Long id) {
-        return entityManager.find(Department.class, id);
+        Department newDepartment = entityManager.find(Department.class, id);
+        if (newDepartment == null) {
+            throw new NotFoundException("During searching, the department element can not be found");
+        } else {
+            return newDepartment;
+        }
     }
 
     @Override
     public Department update(Department department) {
-        find(department.getId());
-        return entityManager.merge(department);
+
+        Department newDepartment = find(department.getId());
+
+        newDepartment.setName(department.getName());
+        newDepartment.setAddress(department.getAddress());
+        newDepartment.setId(department.getId());
+
+        return newDepartment;
     }
 
     @Override

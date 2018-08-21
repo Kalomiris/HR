@@ -6,6 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+import javax.ws.rs.NotFoundException;
 import java.util.List;
 
 @Stateless
@@ -33,13 +34,32 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
     @Override
     public Employee find(Long id) {
-        return entityManager.find(Employee.class, id);
+        Employee newEmployee = entityManager.find(Employee.class, id);
+
+        if (newEmployee == null) {
+            throw new NotFoundException("During searching, the employee element can not be found");
+        } else {
+            return newEmployee;
+        }
     }
 
     @Override
     public Employee update(Employee employee) {
-        find(employee.getId());
-        return entityManager.merge(employee);
+
+        Employee newEmployee = find(employee.getId());
+
+        newEmployee.setFirstName(employee.getFirstName());
+        newEmployee.setLastName(employee.getLastName());
+        newEmployee.setBirthDate(employee.getBirthDate());
+        newEmployee.setAddress(employee.getAddress());
+        newEmployee.setEmail(employee.getEmail());
+        newEmployee.setId(employee.getId());
+        newEmployee.setJoinDate(employee.getJoinDate());
+        newEmployee.setDepartment(employee.getDepartment());
+        newEmployee.setPhoneNumber(employee.getPhoneNumber());
+        newEmployee.setSalary(employee.getSalary());
+
+        return newEmployee;
     }
 
     @Override

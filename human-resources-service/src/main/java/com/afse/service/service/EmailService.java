@@ -1,8 +1,6 @@
 package com.afse.service.service;
 
-import java.io.Serializable;
-
-public interface EmailService extends Serializable {
+public interface EmailService {
 
     void sendMail(String input);
 }

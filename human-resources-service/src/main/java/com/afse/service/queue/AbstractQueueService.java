@@ -1,5 +1,6 @@
 package com.afse.service.queue;
 
+import com.afse.persistence.entity.EmailMassage;
 import exception.InvalidInputException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,26 +12,25 @@ import javax.naming.NamingException;
 import java.io.Serializable;
 
 
-public abstract class AbstractQueueService<T extends Serializable> {
+public abstract class AbstractQueueService implements  Serializable {
+
     private final static Logger LOGGER = LoggerFactory.getLogger(AbstractQueueService.class);
+    private static final long serialVersionUID = -4527531803864463324L;
 
     /**
-     * Lookup to initialize the {@link ConnectionFactory}
-     * and the {@link Queue}
+     * Lookup to initialize
      */
     public abstract void init();
 
     /**
      * Provide a connection factory to send JMS messages
      *
-     * @return JMS {@link ConnectionFactory}
      */
     protected abstract ConnectionFactory getConnectionFactory();
 
     /**
      * Provide a queue to be used for sending messages
      *
-     * @return JMS {@link Queue}
      */
     protected abstract Queue getQueue();
 
@@ -40,12 +40,12 @@ public abstract class AbstractQueueService<T extends Serializable> {
     }
 
     /**
-     * @param event    The actual message to be sent to the {@link Queue}
+     * @param emailMassage    The actual message to be sent to the {@link Queue}
      * @param priority The priority of the message
      * @return true if the message was sent successfully
      * @throws Exception
      */
-    public boolean send(T event, int priority) throws Exception {
+    public boolean send(EmailMassage emailMassage, int priority) throws Exception {
         Connection connection = null;
         Session session = null;
 
@@ -55,7 +55,7 @@ public abstract class AbstractQueueService<T extends Serializable> {
             connection = getConnectionFactory().createConnection();
             session = connection.createSession(true, Session.SESSION_TRANSACTED);
             ObjectMessage message = session.createObjectMessage();
-            message.setObject(event);
+            message.setObject(emailMassage);
             message.setJMSPriority(priority);
             session.createProducer(getQueue())
                     .send(message);

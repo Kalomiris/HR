@@ -12,7 +12,6 @@ import java.util.List;
 @Stateless
 public class LocationServiceImpl implements LocationService {
 
-    private static final long serialVersionUID = -3607610525862767482L;
 
     @EJB
     private LocationDao locationDao;

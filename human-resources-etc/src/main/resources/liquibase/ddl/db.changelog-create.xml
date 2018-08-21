@@ -27,6 +27,9 @@
             <column name="zip" type="varchar(50)">
                 <constraints nullable="false"/>
             </column>
+            <column name="dbversion" type="INTEGER" defaultValue="0">
+                <constraints nullable="false" />
+            </column>
         </createTable>
     </changeSet>
 
@@ -74,6 +77,9 @@
             <column name="department_id" type="bigint">
                 <constraints nullable="false"/>
             </column>
+            <column name="dbversion" type="INTEGER" defaultValue="0">
+                <constraints nullable="false" />
+            </column>
         </createTable>
     </changeSet>
 
@@ -107,6 +113,9 @@
             </column>
             <column name="message" type="varchar(200)">
                 <constraints nullable="false"/>
+            </column>
+            <column name="dbversion" type="INTEGER" defaultValue="0">
+                <constraints nullable="false" />
             </column>
         </createTable>
     </changeSet>

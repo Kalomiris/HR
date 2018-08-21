@@ -9,15 +9,18 @@ import java.util.List;
 
 
 /**
- * Stateless Session bean which offer access to EmployeeDaoImpl
+ * Stateless Session bean which offer access to EmployeeDaoImpl,
+ * when are called save and update methods generated a email simulator.
  */
 @Stateless
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private static final long serialVersionUID = -2092047766509562368L;
 
     @EJB
     private EmployeeDao employeeDao;
+
+    @EJB
+    private EmailService emailServiceImpl;
 
 
     /**
@@ -36,10 +39,16 @@ public class EmployeeServiceImpl implements EmployeeService {
      *
      * @param employee
      * @return Employee
+     * @throws NullPointerException
      */
     @Override
     public Employee save(Employee employee) {
-        return employeeDao.save(employee);
+        if (employee != null) {
+            emailServiceImpl.sendMail("save");
+            return employeeDao.save(employee);
+        } else {
+            throw new NullPointerException("Employee entity does not exist!");
+        }
     }
 
     /**
@@ -59,10 +68,16 @@ public class EmployeeServiceImpl implements EmployeeService {
      *
      * @param employee
      * @return Employee
+     * @throws NullPointerException
      */
     @Override
     public Employee update(Employee employee) {
-        return employeeDao.update(employee);
+        if (employee != null) {
+            emailServiceImpl.sendMail("update");
+            return employeeDao.update(employee);
+        } else {
+            throw new NullPointerException("Employee entity does not exist!");
+        }
     }
 
 

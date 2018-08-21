@@ -1,9 +1,8 @@
 package com.afse.service.service;
 
-import java.io.Serializable;
 import java.util.List;
 
-public interface LocationService extends Serializable {
+public interface LocationService {
 
     List<String> findAll();
 

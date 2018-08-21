@@ -2,11 +2,10 @@ package com.afse.service.service;
 
 import com.afse.persistence.entity.Employee;
 
-import java.io.Serializable;
 import java.util.List;
 
 
-public interface EmployeeService extends Serializable {
+public interface EmployeeService {
 
     List<Employee> findAll();
 

@@ -1,6 +1,7 @@
 package com.afse.persistence.entity;
 
 import javax.persistence.*;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
@@ -21,6 +22,14 @@ public class Department implements Serializable {
     @Column(name = "name")
     private String name;
 
+    /**
+     * Version for optimistic locking
+     */
+    @Version
+    @Column(name = "dbversion", nullable = false, columnDefinition = "INTEGER DEFAULT 0")
+    private int version;
+
+    @Valid
     @Embedded
     private Address address;
 

@@ -20,7 +20,8 @@
             <column name="email" value="kalom_giannhs@yahoo.gr"/>
             <column name="salary" value="10025.33"/>
             <column name="join_date" value="1999-08-31"/>
-            <column name="department_id" value= "2"/>
+            <column name="department_id" valueComputed="(SELECT id FROM department WHERE name='Marketing')"/>
+            <column name="dbversion" value="0"/>
         </insert>
         <insert tableName="employee">
             <column name="id" valueSequenceNext="EMPLOYEESEQ"/>
@@ -36,7 +37,8 @@
             <column name="email" value="nelson@yahoo.gr"/>
             <column name="salary" value="10095.33"/>
             <column name="join_date" value="1999-08-31"/>
-            <column name="department_id" value= "1"/>
+            <column name="department_id" valueComputed="(SELECT id FROM department WHERE name='HR')"/>
+            <column name="dbversion" value="0"/>
         </insert>
 
     </changeSet>

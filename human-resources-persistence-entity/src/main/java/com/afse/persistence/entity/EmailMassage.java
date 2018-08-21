@@ -18,6 +18,13 @@ public class EmailMassage implements Serializable {
     @NotNull(message = "Is empty!")
     private String message;
 
+    /**
+     * Version for optimistic locking
+     */
+    @Version
+    @Column(name = "dbversion", nullable = false, columnDefinition = "INTEGER DEFAULT 0")
+    private int version;
+
     public Long getId() {
         return id;
     }

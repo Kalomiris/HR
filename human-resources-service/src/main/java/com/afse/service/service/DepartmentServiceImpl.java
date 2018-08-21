@@ -13,7 +13,6 @@ import java.util.List;
 @Stateless
 public class DepartmentServiceImpl implements DepartmentService {
 
-    private static final long serialVersionUID = 8860238343622846703L;
 
     @EJB
     private DepartmentDao departmentDao;
@@ -38,7 +37,11 @@ public class DepartmentServiceImpl implements DepartmentService {
      */
     @Override
     public Department save(Department department) {
-        return departmentDao.save(department);
+        if (department != null) {
+            return departmentDao.save(department);
+        } else {
+            throw new NullPointerException("Department entity does not exist");
+        }
     }
 
 
@@ -62,7 +65,11 @@ public class DepartmentServiceImpl implements DepartmentService {
      */
     @Override
     public Department update(Department department) {
-        return departmentDao.update(department);
+        if (department != null) {
+            return departmentDao.update(department);
+        } else {
+            throw new NullPointerException("Department entity does not exist");
+        }
     }
 
 

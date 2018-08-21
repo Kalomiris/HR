@@ -8,10 +8,11 @@ import javax.ejb.Stateless;
 import javax.jms.ConnectionFactory;
 import javax.jms.Message;
 import javax.jms.Queue;
+import java.io.Serializable;
 
 
 @Stateless
-public class MailQueueService extends AbstractQueueService {
+public class MailQueueService extends AbstractQueueService implements Serializable {
 
     private static final long serialVersionUID = 4955436749160910288L;
     private final static Logger LOGGER = LoggerFactory.getLogger(MailQueueService.class);

@@ -9,7 +9,7 @@ import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 
 @Provider
-public class EmployeeFilter implements ContainerResponseFilter {
+public class CacheControlFilter implements ContainerResponseFilter {
     @Override
     public void filter(ContainerRequestContext containerRequestContext, ContainerResponseContext containerResponseContext) throws IOException {
         CacheControl cacheControl = new CacheControl();
