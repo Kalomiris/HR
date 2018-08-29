@@ -20,7 +20,7 @@ public class LocationDaoImpl implements LocationDao {
     public List<String> findAll() {
         List<String> results;
 
-        Query query = entityManager.createQuery("SELECT o.country FROM " + Location.class.getSimpleName() + " o");
+        Query query = entityManager.createQuery("SELECT distinct o.country FROM " + Location.class.getSimpleName() + " o");
         results = query.getResultList();
         return results;
     }

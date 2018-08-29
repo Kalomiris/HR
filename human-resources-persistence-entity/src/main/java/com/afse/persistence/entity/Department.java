@@ -17,7 +17,7 @@ public class Department implements Serializable {
     @SequenceGenerator(name = "DEPARTMENTSEQ", sequenceName = "DEPARTMENTSEQ", allocationSize = 1)
     private Long id;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "DepartmentName field is empty!")
     @Size(max = 20, message = "size out of max")
     @Column(name = "name")
     private String name;

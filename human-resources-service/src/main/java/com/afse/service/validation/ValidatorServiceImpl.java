@@ -5,6 +5,8 @@ import com.afse.persistence.entity.Employee;
 import com.afse.service.service.DepartmentService;
 import com.afse.service.service.EmployeeService;
 import exception.InvalidInputException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -21,6 +23,8 @@ import java.util.Set;
  */
 @Stateless
 public class ValidatorServiceImpl implements ValidatorService {
+
+    private static final Logger logger = LoggerFactory.getLogger(ValidatorServiceImpl.class);
 
     @Inject
     private Validator validator;
@@ -57,6 +61,11 @@ public class ValidatorServiceImpl implements ValidatorService {
     }
 
     public void checkSetCollectionEmpl(Set<ConstraintViolation<Employee>> constrains) {
+        if(!constrains.isEmpty()){
+            for(ConstraintViolation<Employee> constraintViolation : constrains){
+                logger.info(constraintViolation.getMessage());
+            }
+        }
         if (!constrains.isEmpty()) throw new ConstraintViolationException(new HashSet<>(constrains));
     }
 

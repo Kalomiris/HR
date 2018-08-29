@@ -17,13 +17,13 @@ public class Employee implements Serializable {
     @SequenceGenerator(name = "EMPLOYEESEQ", sequenceName = "EMPLOYEESEQ", allocationSize = 1)
     private Long id;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "firstName field Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[a-zA-Z]+")
     @Column(name = "first_name")
     private String firstName;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "lastNmae field Is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "[a-zA-Z]+")
     @Column(name = "last_name")
@@ -38,23 +38,23 @@ public class Employee implements Serializable {
     @Embedded
     private Address address;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "phoneNumber field is empty!")
     @Pattern(regexp = "^[0-9]+")
     @Column(name = "phone_number")
     private String phoneNumber;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "email field is empty!")
     @Email(message = "email")
     @Column(name = "email")
     private String email;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "salary field is empty!")
     @Digits(integer = 10, fraction = 2)
     @Column(name = "salary")
     private double salary;
 
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "joinDate field is empty!")
     @Temporal(TemporalType.DATE)
     @Column(name = "join_date")
     private Date joinDate;

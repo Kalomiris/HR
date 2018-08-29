@@ -16,32 +16,32 @@ public class Address implements Serializable {
 
     private static final long serialVersionUID = -6299108918042614223L;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "country field is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "country")
     private String country;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "city field is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "city")
     private String city;
 
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "street field is empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "^[a-zA-Z]+")
     @Column(name = "street")
     private String street;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "streetNumber field is empty!")
     @Size(max = 10, message = "size out of max")
     @Pattern(regexp = "^[0-9]+", message = "Please enter only numeric")
     @Column(name = "street_number")
     private String streetNumber;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "zip is field empty!")
     @Size(max = 20, message = "size out of max")
     @Pattern(regexp = "^[0-9]+")
     @Column(name = "zip")

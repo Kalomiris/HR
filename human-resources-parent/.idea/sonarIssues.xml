@@ -253,6 +253,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/utils/DateFormat.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-persistence-entity/src/main/java/utils/DateFormatUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../human-resources-rest/pom.xml">
           <value>
             <set />
@@ -454,6 +464,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/java/validation/Validator.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/webapp/editCustomer.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../MyJsfProject1/src/main/webapp/home.xhtml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="sequence:/b05e6498/3b7f73b3-61e4-4c0d-8d08-bd2d5076edac/humanResourcesDS.public.locationseq">
           <value>
             <set />
           </value>

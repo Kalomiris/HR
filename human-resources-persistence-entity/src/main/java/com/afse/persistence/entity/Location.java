@@ -17,12 +17,12 @@ public class Location implements Serializable {
     @SequenceGenerator(name = "LOCATIONSEQ", sequenceName = "LOCATIONSEQ", allocationSize = 1)
     private Long id;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "country field of Location entity is empty!")
     @Size(max = 20, message = "size out of max")
     @Column(name = "country")
     private String country;
 
-    @NotNull(message = "Is empty!")
+    @NotNull(message = "city field of Location entity is empty!")
     @Size(max = 20, message = "size out of max")
     @Column(name = "city")
     private String city;
