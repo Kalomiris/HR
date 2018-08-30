@@ -338,7 +338,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/CorsFeature.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/DynamicFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/EmployeeFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/RequestFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/ResponseFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../human-resources-rest/src/main/java/com/afse/rest/webfilter/ResposnseFilter.java">
           <value>
             <set />
           </value>

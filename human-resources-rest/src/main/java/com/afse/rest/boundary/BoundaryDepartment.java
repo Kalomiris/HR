@@ -40,9 +40,8 @@ public class BoundaryDepartment {
      */
     public Department save(Department department) throws ConstraintViolationException, InvalidInputException {
 
-        Set<ConstraintViolation<Department>> constrains = validatorService.isValid(department);
-
         //Hibernate validation
+        Set<ConstraintViolation<Department>> constrains = validatorService.isValid(department);
         validatorService.checkSetCollectionDep(constrains);
 
         //Throw exception if the combination of city-country do not be existed in DB
@@ -61,9 +60,8 @@ public class BoundaryDepartment {
      */
     public Department update(Department department) throws ConstraintViolationException, InvalidInputException {
 
-        Set<ConstraintViolation<Department>> constrains = validatorService.isValid(department);
-
         //Hibernate validation
+        Set<ConstraintViolation<Department>> constrains = validatorService.isValid(department);
         validatorService.checkSetCollectionDep(constrains);
 
         //Throw exception if id is null

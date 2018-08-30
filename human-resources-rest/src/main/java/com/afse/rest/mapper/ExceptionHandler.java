@@ -16,7 +16,8 @@ public class ExceptionHandler implements ExceptionMapper<Exception> {
 
         if (e instanceof EJBException) {
             if (e.getCause() instanceof ConstraintViolationException) {
-                return Response.status(Response.Status.BAD_REQUEST).entity(((ConstraintViolationException) (e.getCause())).getConstraintViolations()).build();
+                return Response.status(Response.Status.BAD_REQUEST).entity(((ConstraintViolationException) (e.getCause())).
+                        getConstraintViolations()).build();
             }
         }
 

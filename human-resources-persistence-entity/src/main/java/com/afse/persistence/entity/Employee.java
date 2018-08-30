@@ -39,7 +39,7 @@ public class Employee implements Serializable {
     private Address address;
 
     @NotNull(message = "phoneNumber field is empty!")
-    @Pattern(regexp = "^[0-9]+")
+    @Pattern(regexp = "^[0-9]+", message = "Wrong input!")
     @Column(name = "phone_number")
     private String phoneNumber;
 

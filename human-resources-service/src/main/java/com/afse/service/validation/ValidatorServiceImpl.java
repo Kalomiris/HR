@@ -57,7 +57,12 @@ public class ValidatorServiceImpl implements ValidatorService {
     }
 
     public void checkSetCollectionDep(Set<ConstraintViolation<Department>> constrains) {
-        if (!constrains.isEmpty()) throw new ConstraintViolationException(new HashSet<>(constrains));
+        if(!constrains.isEmpty()){
+            for(ConstraintViolation<Department> constraintViolation : constrains){
+                logger.info(constraintViolation.getMessage());
+            }
+            throw new ConstraintViolationException(new HashSet<>(constrains));
+        }
     }
 
     public void checkSetCollectionEmpl(Set<ConstraintViolation<Employee>> constrains) {
@@ -65,8 +70,8 @@ public class ValidatorServiceImpl implements ValidatorService {
             for(ConstraintViolation<Employee> constraintViolation : constrains){
                 logger.info(constraintViolation.getMessage());
             }
+            throw new ConstraintViolationException(new HashSet<>(constrains));
         }
-        if (!constrains.isEmpty()) throw new ConstraintViolationException(new HashSet<>(constrains));
     }
 
     public void checkDepartmentID(Department department) throws InvalidInputException {

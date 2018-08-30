@@ -39,9 +39,8 @@ public class BoundaryEmployee {
      */
     public Employee save(Employee employee) throws ConstraintViolationException, InvalidInputException {
 
-        Set<ConstraintViolation<Employee>> constrains = validatorService.isValid(employee);
-
         //Hibernate validation
+        Set<ConstraintViolation<Employee>> constrains = validatorService.isValid(employee);
         validatorService.checkSetCollectionEmpl(constrains);
 
         //Throw exception if the combination of city-country do not be existed in DB
@@ -60,9 +59,8 @@ public class BoundaryEmployee {
      */
     public Employee update(Employee employee) throws ConstraintViolationException, InvalidInputException {
 
-        Set<ConstraintViolation<Employee>> constrains = validatorService.isValid(employee);
-
         //Hibernate validation
+        Set<ConstraintViolation<Employee>> constrains = validatorService.isValid(employee);
         validatorService.checkSetCollectionEmpl(constrains);
 
         //Throw exception if id is null

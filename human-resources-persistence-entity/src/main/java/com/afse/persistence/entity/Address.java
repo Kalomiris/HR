@@ -18,7 +18,7 @@ public class Address implements Serializable {
 
     @NotNull(message = "country field is empty!")
     @Size(max = 20, message = "size out of max")
-    @Pattern(regexp = "^[a-zA-Z]+")
+    @Pattern(regexp = "^[a-zA-Z]+", message = "Pattern error")
     @Column(name = "country")
     private String country;
 
