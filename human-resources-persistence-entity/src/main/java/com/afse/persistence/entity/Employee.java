@@ -49,7 +49,6 @@ public class Employee implements Serializable {
     private String email;
 
     @NotNull(message = "salary field is empty!")
-    @Digits(integer = 10, fraction = 2)
     @Column(name = "salary")
     private double salary;
 

@@ -42,10 +42,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: net.jcip:jcip-annotations:1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.json.bind:javax.json.bind-api:1.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.logging:jboss-logging:3.3.1.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.resteasy:resteasy-cdi:3.1.4.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.0_spec:1.0.1.Beta1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.spec.javax.ejb:jboss-ejb-api_3.1_spec:1.0.2.Final" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.jboss.weld.servlet:weld-servlet-shaded:3.0.2.Final" level="project" />
     <orderEntry type="module" module-name="human-resources-service" scope="PROVIDED" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.hibernate.validator:hibernate-validator:6.0.11.Final" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.fasterxml:classmate:1.3.4" level="project" />
